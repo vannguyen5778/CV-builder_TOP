@@ -1,7 +1,7 @@
 import Navbar from "./components/navbar";
 import Forms from "./components/forms";
 import Resume from "./components/resume";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import "./index.css";
 import {
   SelectedPage,
@@ -13,22 +13,22 @@ import { SectionProvider } from "./context/SectionContext";
 import logo from "@/assets/images/logo.png";
 
 function App() {
-  const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
+  // const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true)
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.PersonalDetails
   );
 
-  useEffect( () => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setIsTopOfPage(true)
-      } else {
-        setIsTopOfPage(false)
-      }
-    }  
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  // useEffect( () => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY === 0) {
+  //       setIsTopOfPage(true)
+  //     } else {
+  //       setIsTopOfPage(false)
+  //     }
+  //   }  
+  //   window.addEventListener("scroll", handleScroll)
+  //   return () => window.removeEventListener("scroll", handleScroll)
+  // }, [])
 
   const [formValues, setFormValues] = useState<FormValues>({
     personalInfo: {
@@ -113,7 +113,8 @@ function App() {
 
   return (
     <>
-      <div className={`${!isTopOfPage ? "background" : ""} logo`}>
+    {/* ${!isTopOfPage ? "background" : ""} => put in div logo */}
+      <div className={` background logo`}>
         <img  src={logo} alt="" />
       </div>
       <SectionProvider>
@@ -146,6 +147,12 @@ function App() {
 export default App;
 
 
-// manage validation
+// manage validation -react-hook-form
 // account - not local storage
 // scroll/motive div changing scroll bar based on the osition of the page
+
+// drag and drop feature
+// landing page /auth/
+// fix download
+// add clear and load example
+// 

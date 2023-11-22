@@ -201,3 +201,11 @@ button {
 .button:hover {
   opacity: 0.8;
 }
+
+.form-ctn {
+  display: block;
+}
+
+.personal-details {
+  margin-bottom: 40px;
+}
