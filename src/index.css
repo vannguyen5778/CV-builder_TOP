@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f2f3f5;
+}
+
+.App {
+  background-color: #f2f3f5;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.side-bar-flex-ctn {
+  flex: 0.9;
+}
+
+.side-bar-ctn {
+  padding: 1rem 0.5rem;
+  position: fixed;
+  transform: translateY(90px);
+}
+
+.form-ctn {
+  flex: 2;
+  padding: 16px;
+}
+
+.resume-flex-ctn {
+  position: fixed;
+  top: 66px;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+}
+
+.resume-flexbox {
+  flex: 3;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  padding: 0.7rem 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.background.logo {
+  background-color: rgb(246, 227, 227);
+}
+
+@media screen and (max-width: 1190px) {
+  .side-bar-flex-ctn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .resume-flexbox {
+    display: none;
+  }
+}

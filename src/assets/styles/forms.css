@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.font-ctn {
+  font-family: 'Noto Sans';
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Noto Sans';
+}
+
+.ctn {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-family: 'Noto Sans';
+}
+
+.ctn + .ctn {
+  margin-top: 32px;
+}
+
+/* INPUT STYLES */
+.info-group span {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.info-group h3,
+.collapsed-form-title {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 0;
+  font-family: 'Noto Sans';
+}
+
+.info-group .additional {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #858587;
+  font-family: 'Noto Sans';
+}
+
+.info-group input,
+.info-group textarea {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0.625rem;
+  color: #000;
+  background-color: #f0f0f4;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  font-family: 'Noto Sans';
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* BUTTONS */
+
+.buttons button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Noto Sans';
+}
+
+.white {
+  border: 1px solid #6e6e6e;
+  background-color: #fff;
+}
+
+.blue {
+  border: none;
+  color: #fff;
+  background-color: #24a0ed;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Noto Sans';
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.add-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.add-section i {
+  font-size: 16px;
+}
+
+.expand-section {
+  align-items: center;
+  padding: 6px 16px;
+}
+
+.expand-section-header {
+  padding: 8px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms-container {
+  border-top: 5px solid #f2f3f5;
+}
+
+.forms-container:last-of-type {
+  border-bottom: 5px solid #f2f3f5;
+}
+
+.collapsed-form {
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.create-form {
+  border-radius: 24px;
+  width: 110px;
+  border: 4px solid #f2f3f5;
+  align-self: center;
+  margin: 10px 16px;
+}
+
+.button-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.button-content i {
+  font-size: 12px;
+}
+
+.section-content.open {
+  /* visibility: hidden; */
+  display: none;
+}
+
+.add-section .ctn {
+  padding-top: 0;
+}
+
+.eye-icon {
+  padding: 10px 5px;
+}
+
+.button {
+  background-color: #4d9dee;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Noto Sans", serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 2rem;
+  float: right;
+
+}
+
+.download-btn img {
+  line-height: 20px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: auto;
+
+}
+
+
+.button:hover {
+  opacity: 0.8;
+}

@@ -1,5 +1,4 @@
-import React from 'react'
-// import "../../src/assets/styles/InfoInput.css"
+
 
 interface Props {
     header: string;
