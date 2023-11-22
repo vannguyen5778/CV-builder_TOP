@@ -2,8 +2,11 @@
 
 .side-bar-ctn {
   font-family: 'Noto Sans';
+  color: #6b6969;
 }
-
+.side-bar-flex-ctn {
+  height: 100%;
+}
 .logo img {
   width: 110px;
   padding: 10px;
@@ -12,11 +15,45 @@
  
 }
 
-.side-bar-ctn ul {
+aside ul {
   list-style: none;
-  padding: 90px 16px;
 }
 
+img {
+  width: 30px;
+}
+
+aside {
+  width: 100px;
+  /* background-color: #fff; */
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid #d4d5dd;
+
+}
+aside ul p {
+  font-size: 14px;
+}
+
+aside li {
+  display: block;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+}
+
+aside li:hover {
+  background-color: #e1e4eb;
+}
+
+aside .text {
+  padding: 40px 10px 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* 
 .circle {
   width: 20px;
   height: 20px;
@@ -68,3 +105,4 @@ li + li {
   color: #000;
   text-decoration: none;
 }
+ */

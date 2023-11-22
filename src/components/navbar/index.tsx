@@ -1,7 +1,7 @@
-
 import "@/assets/styles/progressBar.css";
-import Link from "./Link";
+// import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
+import ResumeLogo from "@/assets/images/resume.png";
 
 type Props = {
   selectedPage: SelectedPage;
@@ -10,8 +10,23 @@ type Props = {
 const SideBar = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <div className="side-bar-flex-ctn">
-      <div className="side-bar-ctn">
+      <aside className="side-bar-ctn">
+        <p className="text">My Files</p>
         <ul>
+          <li>
+            <img src={ResumeLogo} alt="" />
+            <p>Resumes</p>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  );
+};
+
+export default SideBar;
+
+{
+  /* <ul>
           <li>
             <div
               className={`${
@@ -98,10 +113,5 @@ const SideBar = ({ selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
           </li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-export default SideBar;
+        </ul> */
+}
